@@ -5,7 +5,7 @@ import AnimatedTitle from './AnimatedTitle';
 
 const projects = [
   {
-    title: "AI Body Posture & Injury Risk Detection",
+    title: "Real-Time Exercise Posture Correction & Injury Risk Detection",
     description: "Developed an AI-powered posture correction system using computer vision. Calculated body joint angles in real time to analyze exercise form, detect posture errors, and provide live corrective feedback with repetition counting.",
     tech: ["Python", "OpenCV", "MediaPipe"],
     icon: <Activity size={32} className="text-current" />,

@@ -6,7 +6,7 @@ const education = [
   {
     institution: "RV Institute of Technology and Management (RVITM)",
     degree: "B.E in Computer Science and Engineering • Bengaluru",
-    score: "CGPA • 7.73/10",
+    score: "CGPA • 7.72/10",
     badge: "GRADUATING 2027",
     icon: <GraduationCap className="text-current" size={32} />
   },

@@ -1,6 +1,5 @@
 # 🌐 Personal Developer Portfolio — Shivaprasad V Tengli
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-liart-rho-4sr7qde1ei.vercel.app)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -8,7 +7,7 @@
 
 Welcome to the repository for my personal developer portfolio website! Built with **React 19**, **Vite**, **Tailwind CSS v4**, and **Framer Motion**, this responsive web app showcases my software projects, education, technical skills, and background in computer science & full-stack development.
 
-🔗 **Live Website**: [https://portfolio-liart-rho-4sr7qde1ei.vercel.app](https://portfolio-liart-rho-4sr7qde1ei.vercel.app)
+🔗 **Live Website**: [https://shivp27.vercel.app/](https://shivp27.vercel.app/)
 
 ---
 

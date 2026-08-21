@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Download, Mail, ChevronDown, MapPin } from 'lucide-react';
+import { Starfield } from './ui/starfield';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
 const roles = ["Software Developer"];
@@ -43,24 +44,39 @@ export default function Hero({ darkMode }) {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center gap-8">
           
-          {/* Profile Image */}
-          <motion.div 
-            initial={{ scale: 0.5, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className={`w-40 h-40 md:w-48 md:h-48 rounded-full border p-2 shadow-2xl relative group transition-colors duration-300 ${
-              darkMode ? 'border-white/10 bg-zinc-900/40' : 'border-[#e6dfd3] bg-white'
-            }`}
-          >
-            <div className={`w-full h-full rounded-full overflow-hidden flex items-center justify-center transition-colors duration-300 ${
-              darkMode ? 'bg-zinc-950' : 'bg-[#f4efe6]'
-            }`}>
-              {/* Replace with actual image */}
-              <span className={`text-4xl font-bold group-hover:scale-110 transition-transform ${
-                darkMode ? 'text-zinc-100' : 'text-[#242424]'
-              }`}>ST</span>
+          {/* Profile Image with Starfield */}
+          <div className="relative flex items-center justify-center w-64 h-64 md:w-[400px] md:h-[400px] -my-10 md:-my-20">
+            <div className="absolute inset-0 z-0 opacity-80 mix-blend-screen pointer-events-none">
+              <Starfield
+                starCount={4000}
+                waveFrequency={15}
+                starEscapeWidth={150}
+                voidWidth={50}
+                starColor={darkMode ? { r: 255, g: 255, b: 255 } : { r: 5, g: 150, b: 105 }}
+                maxOpacity={200}
+                rotationSpeed={0.001}
+                waveSpeed={0.005}
+              />
             </div>
-          </motion.div>
+            
+            <motion.div 
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className={`w-40 h-40 md:w-48 md:h-48 rounded-full border p-2 shadow-2xl relative z-10 group transition-colors duration-300 ${
+                darkMode ? 'border-white/10 bg-zinc-900/40' : 'border-[#e6dfd3] bg-white'
+              }`}
+            >
+              <div className={`w-full h-full rounded-full overflow-hidden flex items-center justify-center transition-colors duration-300 ${
+                darkMode ? 'bg-zinc-950' : 'bg-[#f4efe6]'
+              }`}>
+                {/* Replace with actual image */}
+                <span className={`text-4xl font-bold group-hover:scale-110 transition-transform ${
+                  darkMode ? 'text-zinc-100' : 'text-[#242424]'
+                }`}>ST</span>
+              </div>
+            </motion.div>
+          </div>
 
           <div className="space-y-4 max-w-3xl flex flex-col items-center">
             <motion.h2 

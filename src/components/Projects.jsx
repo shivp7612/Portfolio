@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Activity, Leaf, FileSearch } from 'lucide-react';
+import { ExternalLink, Activity, Leaf, Globe } from 'lucide-react';
 import { GithubIcon } from './Icons';
 import AnimatedTitle from './AnimatedTitle';
 
@@ -10,7 +10,7 @@ const projects = [
     tech: ["Python", "OpenCV", "MediaPipe"],
     icon: <Activity size={32} className="text-current" />,
     links: {
-      github: "#"
+      github: "https://github.com/shivp7612/AI_GYM_Trainer"
     },
     color: "from-white/[0.03] to-transparent"
   },
@@ -20,17 +20,17 @@ const projects = [
     tech: ["Python", "NLP", "REST API"],
     icon: <Leaf size={32} className="text-current" />,
     links: {
-      github: "#"
+      github: "https://github.com/prxnxv07/Agri-Bot"
     },
     color: "from-white/[0.03] to-transparent"
   },
   {
-    title: "AI-Based Resume Filtering System",
-    description: "Designed an AI-powered resume screening system to automate candidate shortlisting. Implemented resume-to-job matching by extracting keywords and calculating skill relevance scores, wrapped in a full-stack dashboard.",
-    tech: ["Python", "Node.js", "React.js", "NLP"],
-    icon: <FileSearch size={32} className="text-current" />,
+    title: "Glass-Box Browsing Companion",
+    description: "Developed a context-aware browser assistant using a Chrome Extension and Python FastAPI backend to provide real-time webpage assistance. Implemented webpage context extraction to analyze content from the active browser tab. Integrated Google Gemini 2.5 Flash and built an interactive browser side-panel using JavaScript, HTML, and CSS for AI-assisted browsing.",
+    tech: ["Python", "FastAPI", "JavaScript", "Chrome Extension"],
+    icon: <Globe size={32} className="text-current" />,
     links: {
-      github: "#"
+      github: "https://github.com/shivp7612/Glass-Box-Browsing-Companion"
     },
     color: "from-white/[0.03] to-transparent"
   }

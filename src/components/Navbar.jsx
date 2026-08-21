@@ -72,7 +72,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         <nav className="hidden md:flex items-center">
           <ul className={`flex items-center gap-2 px-4 py-2 rounded-full border transition-all duration-300 ${
             darkMode 
-              ? 'bg-white/[0.03] border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.3)]' 
+              ? 'bg-black/60 backdrop-blur-md border-white/5 shadow-[0_4px_20px_rgba(0,0,0,0.5)]' 
               : 'bg-[#fffdf9] border-[#e6dfd3] shadow-sm'
           }`}>
             {navLinks.map((link) => (
